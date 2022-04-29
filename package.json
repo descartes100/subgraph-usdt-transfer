@@ -1,0 +1,14 @@
+{
+  "name": "usdt",
+  "license": "MIT",
+  "author": "descartes",
+  "scripts": {
+    "codegen": "graph codegen ./token.yaml",
+    "build": "graph build ./token.yaml",
+    "deploy": "graph deploy --product hosted-service --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ descartes100/usdt ./token.yaml --access-token"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.29.0",
+    "@graphprotocol/graph-ts": "0.26.0"
+  }
+}
